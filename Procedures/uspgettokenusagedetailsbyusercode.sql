@@ -65,7 +65,7 @@ select SUM(COALESCE(TK.inputtoken_usage,0)) + SUM(COALESCE(TK.responsetoken_usag
 		 ,coalesce(var_totalquestions,0) AS totalquestioncount,
 		 coalesce (var_mcqcount,0) AS mcqcount,
 		 coalesce (var_laqcount,0) AS laqcount,
-		 Coalesce(var_todaystoken) AS todaystoken;
+		 Coalesce(var_todaystoken) AS todaystokeN;
 		 
 
     OPEN par_ref2 FOR
