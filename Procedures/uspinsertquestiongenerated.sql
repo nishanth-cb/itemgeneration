@@ -70,7 +70,7 @@ BEGIN
             END AS keypoints,
             par_questiontypeid AS QuestionTypeid,par_questionguid||var_idd::character varying  as questionguid
         FROM jsonb_array_elements(par_questiondata) AS elem
-        WHERE elem->>'label' IS NOT NULL
+        WHERE elem->>'label' IS NOT NULl
     )
 
     INSERT INTO tblquestiongeneratedlist (
